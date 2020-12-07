@@ -1,0 +1,9 @@
+FROM alembic
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y python-pip jupyter-notebook
+
+RUN python -m pip install ipykernel
+RUN python -m ipykernel install --user
+
+CMD ["jupyter", "notebook", "--port=8899", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
