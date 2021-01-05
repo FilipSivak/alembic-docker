@@ -1,6 +1,8 @@
 # Alembic Docker image
 Creates docker image with installed alembic python library from fork https://github.com/FilipSivak/alembic for loading Alembic 3D files in python.
 
+Documentation of alembic python module: https://docs.alembic.io/python/examples.html
+
 Dockerfile:
 | Package   | Version |
 |-----------|---------|
